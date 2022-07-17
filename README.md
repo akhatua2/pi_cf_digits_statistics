@@ -61,4 +61,24 @@ python chi_square_pairs_test.py
 
 Use the `--help` flag to see the input parameters.
 
+## Random and Pi Walk Tests on CF digits of Pi
+
+To run this test for random walks mod 4
+```
+python walk.py --use_rand True --mod 4
+```
+To run this test for random walks mod 6
+```
+python walk.py --use_rand True --mod 6
+```
+To run this test for pi walks mod 4
+```
+python walk.py --mod 4
+```
+To run this test for pi walks mod 6
+```
+python walk.py --mod 6
+```
+
+
 
