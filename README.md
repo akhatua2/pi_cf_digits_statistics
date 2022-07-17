@@ -1,7 +1,7 @@
-# Statistical Analysis of CF Digits of Pi
+# Statistical Analysis of CF Digits of $\pi$
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
 
-Large scale statistical analysis of the randomness of the continued fraction digits on pi
+Large scale statistical analysis of the randomness of the continued fraction digits on $\pi$
 
 
 ## INSTALL 
@@ -26,7 +26,7 @@ Google Drive link -
 https://drive.google.com/drive/folders/1C7-0ixzZUMBNtBLvP6AvTjj2qstHGARq?usp=sharing
 ```
 
-## Chi-Square Test on CF digits of Pi
+## Chi-Square Test on CF digits of $\pi$
 
 The results from the runs in the following table are in the `results` folder. To run this test yourself 
 
@@ -51,7 +51,7 @@ Use the `--help` flag to see the input parameters.
 |100M|100|10|0.1819|
 |100M|100|50|0.5548|
 
-## Chi-Square-Pairs Test on CF digits of Pi
+## Chi-Square-Pairs Test on CF digits of $\pi$
 
 The results from the runs in the following table are in the `results` folder. To run this test yourself 
 
@@ -61,7 +61,14 @@ python chi_square_pairs_test.py
 
 Use the `--help` flag to see the input parameters.
 
-## Random and Pi Walk Tests on CF digits of Pi
+## Random and Pi Walk Tests on CF digits of $\pi$
+
+|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
+|--|--|--|--|--|--|--|
+|1B|1K|Random|4|(0.5251, 5.2086)|1.7712|0.5376|
+|1B|1K|$\pi$|4|(0.5619, 4.6821)|1.7467|0.5131|
+|1B|1K|Random|6|(1625.3469, 11850.8344)|4684.2821|2522206.1785|
+|1B|1K|$\pi$|6|(1380.0823, 13175.6054)|4694.2315|2976212.7692|
 
 To run this test for random walks mod 4
 ```
@@ -80,7 +87,14 @@ To run this test for pi walks mod 6
 python walk.py --mod 6
 ```
 
-## Random and Pi Sites visited Tests on CF digits of Pi
+## Random and Pi Sites visited Tests on CF digits of $\pi$
+
+|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
+|--|--|--|--|--|--|--|
+|1B|1K|Random|4|(90854, 176387)|147905.047|134260828.4412|
+|1B|1K|$\pi$|4|(97143, 172690)|146080.107|137343287.3529|
+|1B|1K|Random|6|(17784, 21548)|20094.057|207318.9787|
+|1B|1K|$\pi$|6|(17880, 21135)|19854.228|193608.8428|
 
 To run this test for random walks mod 4
 ```
