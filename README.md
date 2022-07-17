@@ -80,5 +80,24 @@ To run this test for pi walks mod 6
 python walk.py --mod 6
 ```
 
+## Random and Pi Sites visited Tests on CF digits of Pi
+
+To run this test for random walks mod 4
+```
+python sites_visited.py --use_rand True --mod 4
+```
+To run this test for random walks mod 6
+```
+python sites_visited.py --use_rand True --mod 6
+```
+To run this test for pi walks mod 4
+```
+python sites_visited.py --mod 4
+```
+To run this test for pi walks mod 6
+```
+python sites_visited.py --mod 6
+```
+
 
 
