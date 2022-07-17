@@ -1,6 +1,8 @@
 # Statistical Analysis of CF Digits of Pi
-Large scale statistical analysis of the randomness of the continued fraction digits on pi
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
+
+Large scale statistical analysis of the randomness of the continued fraction digits on pi
+
 
 ## INSTALL 
 1. Clone this repo
