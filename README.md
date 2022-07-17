@@ -61,14 +61,16 @@ python chi_square_pairs_test.py
 
 Use the `--help` flag to see the input parameters.
 
-## Random and Pi Walk Tests on CF digits of $\pi$
+|Number of digits|Number of blocks|Number of pairs|KS-test on Chi-Square Vals|
+|--|--|--|--|
+|1B|1K|5|3.1474e-8|
+|1B|10K|5|4.2490e-74|
+|10M|10|5|0.8372|
+|10M|10|5|0.0020|
+|100M|1K|5|4.9684e-11|
+|100M|100|5|0.1267|
 
-|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
-|--|--|--|--|--|--|--|
-|1B|1K|Random|4|(0.5251, 5.2086)|1.7712|0.5376|
-|1B|1K|$\pi$|4|(0.5619, 4.6821)|1.7467|0.5131|
-|1B|1K|Random|6|(1625.3469, 11850.8344)|4684.2821|2522206.1785|
-|1B|1K|$\pi$|6|(1380.0823, 13175.6054)|4694.2315|2976212.7692|
+## Random and Pi Walk Tests on CF digits of $\pi$
 
 To run this test for random walks mod 4
 ```
@@ -87,14 +89,14 @@ To run this test for pi walks mod 6
 python walk.py --mod 6
 ```
 
-## Random and Pi Sites visited Tests on CF digits of $\pi$
-
 |Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
 |--|--|--|--|--|--|--|
-|1B|1K|Random|4|(90854, 176387)|147905.047|134260828.4412|
-|1B|1K|$\pi$|4|(97143, 172690)|146080.107|137343287.3529|
-|1B|1K|Random|6|(17784, 21548)|20094.057|207318.9787|
-|1B|1K|$\pi$|6|(17880, 21135)|19854.228|193608.8428|
+|1B|1K|Random|4|(0.5251, 5.2086)|1.7712|0.5376|
+|1B|1K|$\pi$|4|(0.5619, 4.6821)|1.7467|0.5131|
+|1B|1K|Random|6|(1625.3469, 11850.8344)|4684.2821|2522206.1785|
+|1B|1K|$\pi$|6|(1380.0823, 13175.6054)|4694.2315|2976212.7692|
+
+## Random and Pi Sites visited Tests on CF digits of $\pi$
 
 To run this test for random walks mod 4
 ```
@@ -112,6 +114,13 @@ To run this test for pi walks mod 6
 ```
 python sites_visited.py --mod 6
 ```
+
+|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
+|--|--|--|--|--|--|--|
+|1B|1K|Random|4|(90854, 176387)|147905.047|134260828.4412|
+|1B|1K|$\pi$|4|(97143, 172690)|146080.107|137343287.3529|
+|1B|1K|Random|6|(17784, 21548)|20094.057|207318.9787|
+|1B|1K|$\pi$|6|(17880, 21135)|19854.228|193608.8428|
 
 
 
