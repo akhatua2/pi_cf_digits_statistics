@@ -38,8 +38,8 @@ Use the `--help` flag to see the input parameters.
 
 |Number of digits|Number of blocks|Number of groups|KS-test on Chi-Square Vals|
 |--|--|--|--|
-|1B|1K|10|0.0414|
-|1B|1K|50|0.0184|
+|1B|10K|10|0.0414|
+|1B|10K|50|0.0184|
 |1B|1K|10|0.0077|
 |1B|1K|50|0.0840|
 |10M|10|10|0.8053|
