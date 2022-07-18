@@ -91,10 +91,10 @@ python walk.py --mod 6
 
 |Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
 |--|--|--|--|--|--|--|
-|1B|1K|Random|4|(0.5251, 5.2086)|1.7712|0.5376|
-|1B|1K|$\pi$|4|(0.5619, 4.6821)|1.7467|0.5131|
-|1B|1K|Random|6|(0.8699, 7.7178)|3.0139|1.1177|
-|1B|1K|$\pi$|6|(0.8785, 8.3878)|2.9884|1.2062|
+|1B|1K|Random|4|(0.525, 5.208)|1.771|0.537|
+|1B|1K|$\pi$|4|(0.562, 4.682)|1.746|0.513|
+|1B|1K|Random|6|(0.869, 7.718)|3.014|1.118|
+|1B|1K|$\pi$|6|(0.878, 8.388)|2.988|1.206|
 
 ## Random and Pi Sites visited Tests on CF digits of $\pi$
 
