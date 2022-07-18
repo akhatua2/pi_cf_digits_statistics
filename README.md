@@ -51,6 +51,10 @@ Use the `--help` flag to see the input parameters.
 |100M|100|10|0.1819|
 |100M|100|50|0.5548|
 
+TODO:
+
+Optimal values -> 10, 50 - groups, 10M, **1M**, 100K - blocksize (6 total runs)
+
 ## Chi-Square-Pairs Test on CF digits of $\pi$
 
 The results from the runs in the following table are in the `results` folder. To run this test yourself 
@@ -69,6 +73,10 @@ Use the `--help` flag to see the input parameters.
 |10M|10|5|0.0020|
 |100M|1K|5|4.9684e-11|
 |100M|100|5|0.1267|
+
+TODO:
+
+Optimal values -> 10, 50 - groups, 10M, **1M**, 100K - blocksize (6 total runs)
 
 ## Random and Pi Walk Tests on CF digits of $\pi$
 
