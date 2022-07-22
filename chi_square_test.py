@@ -63,6 +63,7 @@ def ChiSquare(data: list, blocksize: int, number_of_groups: int):
         
         p_array = P(number_of_groups)
         assert(len(p_array) == (number_of_groups + 1))
+        #1, 2, 3, 4, 5, 6, 7, 8, 9, 10, >10
         
         q_res = chisquare_test(y_array, blocksize, p_array, number_of_groups+1)
         
