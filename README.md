@@ -123,12 +123,12 @@ To run this test for pi walks mod 6
 python sites_visited.py --mod 6
 ```
 
-|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
+|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|Std Dev|
 |--|--|--|--|--|--|--|
-|1B|1K|Random|4|(90854, 176387)|147905.047|134260828.4412|
-|1B|1K|$\pi$|4|(97143, 172690)|146080.107|137343287.3529|
-|1B|1K|Random|6|(17784, 21548)|20094.057|207318.9787|
-|1B|1K|$\pi$|6|(17880, 21135)|19854.228|193608.8428|
+|1B|1K|Random|4|(90854, 176387)|147905.047|134260828.4412|11587.097|
+|1B|1K|$\pi$|4|(97143, 172690)|146080.107|137343287.3529|11719.3552|
+|1B|1K|Random|6|(17784, 21548)|20094.057|207318.9787|455.322|
+|1B|1K|$\pi$|6|(17880, 21135)|19854.228|193608.8428|440.0100|
 
 
 
