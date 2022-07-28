@@ -97,7 +97,7 @@ To run this test for pi walks mod 6
 python walk.py --mod 6
 ```
 
-|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|
+|Number of digits|Number of runs|Type or digits|Mod|MinMax|Mean|Variance|
 |--|--|--|--|--|--|--|
 |1B|1K|Random|4|(0.525, 5.208)|1.771|0.537|
 |1B|1K|$\pi$|4|(0.562, 4.682)|1.746|0.513|
