@@ -14,6 +14,7 @@ git clone https://github.com/akhatua2/pi_cf_digits_statistics.git
 cd pi_cf_digits_statistics
 python3 -m venv igl_venv
 source igl_venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
