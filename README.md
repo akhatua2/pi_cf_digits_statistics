@@ -149,7 +149,7 @@ python sites_visited.py --mod 6
 ##  Extreme value statistics of $\pi$ for Quartiles in Max_Digits
 
 |Number of digits|Blocksize|Quartiles|Experimental value|Theoretical value|
-|--|--|--|--|
+|--|--|--|--|--|
 |10M|10000|10%|6090|6265.54495327263|
 |10M|10000|25%|10479|X|
 |10M|10000|50%|20311|X|
