@@ -53,6 +53,8 @@ def ChiSquare(data: list, blocksize: int, number_of_groups: int):
         for i in range(number_of_groups):
             q_val += ((y_array[i] - blocksize*p_array[i])**2)/(blocksize*p_array[i])
         return q_val
+
+    y_array_per_block = [] # for debugging
     
     for pi_cf_digits in groups:
         pi_digits = list(pi_cf_digits)
@@ -68,9 +70,10 @@ def ChiSquare(data: list, blocksize: int, number_of_groups: int):
         p_val = 1 - stats.chi2.cdf(q_res , number_of_groups)
         p_val_arr.append(p_val)
         q_res_arr.append(q_res)
+        y_array_per_block.append(y_array) # for debugging
     assert(len(p_val_arr) == (number_of_blocks))
     assert(len(q_res_arr) == (number_of_blocks))
-    return p_val_arr, q_res_arr
+    return p_val_arr, q_res_arr, y_array_per_block
 
 
 if __name__ == '__main__':
@@ -81,7 +84,7 @@ if __name__ == '__main__':
     left_over = []
     for file in tqdm(filenames):
         outname = file.split('.')[0][9:]
-        filename = 'results/' + '1M-blocksize-10-groups/chi_results_' + outname  + '.csv'
+        filename = 'results/' + '1M-blocksize-10-groups/debugging_chi_results_' + outname  + '.csv'
         #print(filename)
         if exists(filename):
             #print('Exists. Going to the next one')
@@ -93,12 +96,13 @@ if __name__ == '__main__':
             left_over = pi_cf_digits[num_digits - mod + 1:]
             pi_cf_digits = pi_cf_digits[:num_digits - mod]
         #print("Starting Chi-Square Test on " + getLenDataText(num_digits) + " continued fraction pi digits...")
-        p_val_arr, q_res_arr = ChiSquare(pi_cf_digits, args.blocksize, args.number_of_groups)
+        p_val_arr, q_res_arr, y_array_per_block = ChiSquare(pi_cf_digits, args.blocksize, args.number_of_groups)
 
         result = defaultdict(list)
-        for p_val, q_val in zip(p_val_arr, q_res_arr):
+        for p_val, q_val, y_array in zip(p_val_arr, q_res_arr, y_array_per_block):
             result['p-value'].append(p_val)
             result['chi-square value'].append(q_val)
+            result['digit-count'].append(y_array)
         df = pd.DataFrame(data=result)
         #print("Printing results into " + filename)
         df.to_csv(filename) 
