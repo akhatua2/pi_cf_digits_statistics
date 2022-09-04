@@ -134,7 +134,7 @@ python sites_visited.py --mod 6
 ##  Cut-off value on CF digits of $\pi$
 
 
-|Number of digits|Cut-of number|Blocksize|Theoretical value|Experimental value|Difference|
+|Number of digits|Cut-of number(m)|Blocksize(n)|Theoretical value(Pr_T)|Experimental value(Pr_E)|Difference|
 |--|--|--|--|--|--|
 |10M|10000|1000|0.1343483455185307|0.136|0.0016516544814693113|
 |10M|100000|1000|0.014323412100246347|0.0135|-0.0008234121002463467|
@@ -148,7 +148,7 @@ python sites_visited.py --mod 6
 
 ##  Extreme value statistics of $\pi$ for Quartiles in Max_Digits
 
-|Number of digits|Blocksize|Quartiles|Experimental value|Theoretical value|
+|Number of digits|Blocksize(n)|Quartiles(Pr)|Experimental value(m_E)|Theoretical value(m_T)|
 |--|--|--|--|--|
 |10M|10000|10%|6090|6265.54495327263|
 |10M|10000|25%|10479|10406.84490502804|
