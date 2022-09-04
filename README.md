@@ -124,17 +124,19 @@ To run this test for pi walks mod 6
 python sites_visited.py --mod 6
 ```
 
-|Number of digits|Number of runs|Mod|Type or digits|MinMax|Mean|Variance|Std Dev|
-|--|--|--|--|--|--|--|--|
-|1B|1K|Random|4|(90854, 176387)|147905.047|134260828.4412|11587.097|
-|1B|1K|$\pi$|4|(97143, 172690)|146080.107|137343287.3529|11719.3552|
-|1B|1K|Random|6|(17784, 21548)|20094.057|207318.9787|455.322|
-|1B|1K|$\pi$|6|(17880, 21135)|19854.228|193608.8428|440.0100|
+|Number of digits|Number of runs|Type or digits|Mod|MinMax|Mean|Variance|Std Dev|Runtime|
+|--|--|--|--|--|--|--|--|--|
+|30M|1000|Random|4|(23045836, 25101953)|24318792.021|119744160752.92949|346040|16hrs|
+|30M|1000|$\pi$|4|(23045527, 25101552)|24318752.055|119784263571.83225|346098|18hrs|
+|1B|1K|Random|4|(90854, 176387)|147905.047|134260828.4412|11587.097|-|
+|1B|1K|$\pi$|4|(97143, 172690)|146080.107|137343287.3529|11719.3552|-|
+|1B|1K|Random|6|(17784, 21548)|20094.057|207318.9787|455.322|-|
+|1B|1K|$\pi$|6|(17880, 21135)|19854.228|193608.8428|440.0100|-|
 
 ##  Cut-off value on CF digits of $\pi$
 
 
-|Number of digits|Cut-of number(m)|Blocksize(n)|Theoretical value(Pr_T)|Experimental value(Pr_E)|Difference|
+|Number of digits|Cut-of number|Blocksize|Theoretical value|Experimental value|Difference|
 |--|--|--|--|--|--|
 |10M|10000|1000|0.1343483455185307|0.136|0.0016516544814693113|
 |10M|100000|1000|0.014323412100246347|0.0135|-0.0008234121002463467|
@@ -148,7 +150,7 @@ python sites_visited.py --mod 6
 
 ##  Extreme value statistics of $\pi$ for Quartiles in Max_Digits
 
-|Number of digits|Blocksize(n)|Quartiles(Pr)|Experimental value(m_E)|Theoretical value(m_T)|
+|Number of digits|Blocksize|Quartiles|Experimental value|Theoretical value|
 |--|--|--|--|--|
 |10M|10000|10%|6090|6265.54495327263|
 |10M|10000|25%|10479|10406.84490502804|
