@@ -100,7 +100,7 @@ To run this test for pi walks mod 6
 python walk.py --mod 6
 ```
 
-|Number of digits|Number of runs|Type or digits|Mod|MinMax|Mean|Variance|
+|Number of digits|Number of blocks|Type or digits|Mod|MinMax|Mean|Variance|
 |--|--|--|--|--|--|--|
 |30M|1K|Random_1|4|(12971844.338, 103153685.155)|40769453.987|210973198162334.23|
 |30M|1K|Random_2|4|(12876544.325, 108576945.287)|40586421.642|208297314523442.82|
@@ -129,7 +129,7 @@ To run this test for pi walks mod 6
 python sites_visited.py --mod 6
 ```
 
-|Number of digits|Number of runs|Type or digits|Mod|MinMax|Mean|Variance|Std Dev|Runtime|
+|Number of digits|Number of blocks|Type or digits|Mod|MinMax|Mean|Variance|Std Dev|Runtime|
 |--|--|--|--|--|--|--|--|--|
 |30M|1000|Random_1|4|(23045836, 25101953)|24318792.021|119744160752.9294|346040.692|16hrs|
 |30M|1000|Random_2|4|(21384756, 24987201)|24128376.236|137956343984.6548|371424.748|16hrs|
