@@ -39,8 +39,8 @@ Use the `--help` flag to see the input parameters.
 
 |Number of digits|Number of blocks|Number of groups|KS-test on Chi-Square Vals|
 |--|--|--|--|
-|30B|30K|10|0.41821383065661566|
-|30B|30K|50|0.4705175719504975|
+|30B|30K|10|0.418|
+|30B|30K|50|0.470|
 |1B|10K|10|0.414|
 |1B|10K|50|0.184|
 |1B|1K|10|0.077|
